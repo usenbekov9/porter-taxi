@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+:root {
+  --primary: #0d47a1;
+  --accent: #ff7a00;
+  --bg: #f5f7fb;
+  --white: #ffffff;
+  --text: #1a1a1a;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("https://portertaxi.kg/wp-content/uploads/2025/04/2000x650-mpx-1.jpg") center / cover no-repeat;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  background: var(--accent);
+  color: white;
+  padding: 16px 36px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+  font-family: 'Roboto Slab', serif;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  background-color: #0d47a1;
+}
+
+/* CARDS */
+.cars {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  font-family: 'Lilita One', cursive;
+}
+
+.car-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.car-card img {
+  width: 300px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.car-card h3 {
+  margin: 10px 0 5px;
+}
+
+.car-card p {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.car-card:hover {
+  transform: translateY(-6px);
+}

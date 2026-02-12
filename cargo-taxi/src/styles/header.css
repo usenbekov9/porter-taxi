@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+  font-size: 25px;
+  color: var(--primary);
+  font-family: 'Bungee', cursive;
+  cursor: pointer;
+}
+.header h1 span {
+  color: var(--accent);
+}
+
+.header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text);
+  transition: 0.2s;
+  color: #0d47a1;
+  font-family: 'Bungee', cursive;
+}
+
+.header nav a:hover {
+  color: var(--accent);
+}
