@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "lucide-react": "^0.563.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  
+  "homepage": "https://usenbekov9.github.io/porter-taxi",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   }
 }
