@@ -5,7 +5,6 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
-  
   "homepage": "https://usenbekov9.github.io/porter-taxi",
   "scripts": {
     "dev": "vite",
