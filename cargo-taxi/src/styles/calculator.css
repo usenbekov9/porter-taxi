@@ -50,6 +50,8 @@
 }
 
 .calculator button:hover {
-  background: #1ebe5d;
+  background: #fff;
+  color: #25d366;
+  border: 1px solid #25d366;
   transform: translateY(-2px);
 }
