@@ -1,3 +1,4 @@
+//Footer.jsx
 import "../styles/footer.css";
 import { Phone } from "lucide-react";
 

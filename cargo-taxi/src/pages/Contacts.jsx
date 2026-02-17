@@ -1,4 +1,6 @@
+///pages/Contacts.jsx
 import { Phone } from "lucide-react";
+import "../styles/contacts.css";
 
 export default function Contacts() {
   return (

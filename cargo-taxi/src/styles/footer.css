@@ -1,12 +1,7 @@
 .footer {
-  background: #111;
-  color: #fff;
-  padding: 20px 20px;
+  background: transparent;
+  padding: 50px 20px;
   text-align: center;
-  margin-top: 60px;
-}
-
-.footer p {
-  margin: 6px 0;
-  opacity: 0.8;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
 }

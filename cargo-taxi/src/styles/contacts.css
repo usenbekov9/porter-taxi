@@ -1,0 +1,14 @@
+.contacts {
+  max-width: 1000px;
+  margin: auto;
+  background: var(--card);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+.contacts iframe {
+  margin-top: 25px;
+  border-radius: var(--radius);
+  border: none;
+}

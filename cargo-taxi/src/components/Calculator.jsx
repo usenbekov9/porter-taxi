@@ -1,10 +1,11 @@
+//Calculator.jsx
 import { useState } from "react";
 import "../styles/calculator.css";
 
 const TARIFFS = {
-  porter: 25,
-  sprinter: 35,
-  truck: 50,
+  porter: 40,
+  sprinter: 45,
+  truck: 60,
 };
 
 export default function Calculator() {
@@ -21,7 +22,7 @@ export default function Calculator() {
   const order = () => {
     if (!km) return alert("Введите расстояние");
 
-    const text = `🚚 Грузовое такси
+    const text = ` Грузовое такси
 Машина: ${car}
 Км: ${km}
 Грузчики: ${loader ? "Да" : "Нет"}
@@ -39,9 +40,9 @@ export default function Calculator() {
       <h2>Расчёт стоимости</h2>
 
       <select value={car} onChange={e => setCar(e.target.value)}>
-        <option value="porter">Porter — 25 сом/км</option>
-        <option value="sprinter">Sprinter — 35 сом/км</option>
-        <option value="truck">Большегруз — 50 сом/км</option>
+        <option value="porter">Porter — 40 сом/км</option>
+        <option value="sprinter">Sprinter — 45 сом/км</option>
+        <option value="truck">Большегруз — 60 сом/км</option>
       </select>
 
       <input

@@ -1,3 +1,5 @@
+//CarCard.jsx
+import "../styles/cars.css";
 export default function CarCard({ title, price, img  }) {
   return (
     <div onClick={() => window.location.href = "/pricing"} className="car-card">

@@ -1,0 +1,48 @@
+.hero {
+  position: relative;
+  padding: 160px 20px 200px;
+  text-align: center;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 30% 30%, #2563eb 0%, transparent 40%),
+    radial-gradient(circle at 70% 60%, #ff9f1c 0%, transparent 45%);
+  z-index: -1;
+  filter: blur(120px);
+}
+
+.hero h2 {
+  font-size: 54px;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.15;
+  animation: floatIn 1.2s ease forwards;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 25px 0 40px;
+  color: var(--muted);
+  animation: floatIn 1.4s ease forwards;
+}
+
+.hero .btn {
+  background: linear-gradient(135deg, var(--primary), #60a5fa);
+  color: white;
+  padding: 18px 42px;
+  border-radius: 999px;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.hero .btn:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: var(--shadow-deep);
+}
